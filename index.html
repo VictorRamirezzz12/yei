@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para el Amor de Mi Vida</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #fff;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            background-image: url(../img/Gatitos.png);
+            background-size: cover;
+            background-repeat: repeat;
+            background-position: center;
+            height: 100vh; 
+        }
+        .container {
+            width: 90%;
+            max-width: 800px;
+            margin: 50px auto;
+            background-color: rgba(255, 255, 255, 0.9); 
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 15px;
+            overflow: hidden;
+            border: 2px solid #e91e63; 
+        }
+        .header {
+            background-color: #e91e63;
+            color: white;
+            padding: 30px 0;
+            font-size: 2em;
+        }
+        .photo {
+            width: 40%;
+            height: auto;
+            object-fit: cover;
+        }
+        .content {
+            padding: 20px;
+        }
+        h2 {
+            color: #e91e63;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        h2 span {
+            margin-left: 10px; 
+        }
+        p {
+            font-size: 1.2em;
+            margin: 15px 0;
+        }
+        .btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 30px;
+            background-color: #e91e63;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1.2em;
+            cursor: pointer;
+        }
+        .btn:hover {
+            background-color: #c2185b;
+        }
+        .gallery {
+            display: none;
+            margin-top: 20px;
+        }
+        .gallery img {
+            width: 100%;
+            max-width: 200px;
+            margin: 10px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">Para el Amor de Mi Vida</div>
+        <img class="photo" src="../img/foto1.jpg"Nuestra Foto Juntos">  
+            <h2>Siempre en Mi Corazón ❤️</h2>
+            <p>Te amo, mi vida queria hacerte algo nuevo que es un sistema web, espero te guste uwu</p>
+            <div class="btn" onclick="mostrarGaleria()">¡Sorpresa!</div>
+            <div class="gallery" id="galeria">
+                <img src="../img/foto2.jpg" alt="Foto 1">  
+                <img src="../img/foto3.jpg" alt="Foto 2">  
+                <img src="../img/foto4.jpg" alt="Foto 3">  
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function mostrarGaleria() {
+            var galeria = document.getElementById('galeria');
+            if (galeria.style.display === 'none' || galeria.style.display === '') {
+                galeria.style.display = 'block';
+            } else {
+                galeria.style.display = 'none';
+            }
+        }
+    </script>
+</body>
